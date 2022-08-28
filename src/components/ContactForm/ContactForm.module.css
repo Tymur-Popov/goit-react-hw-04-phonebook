@@ -1,0 +1,23 @@
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    width: 250px;
+    height: 30px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    
+}
+
+button {
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+
+    font-size: 12px;
+    background-color: rgb(243, 161, 242 , 0.5);
+}
+
