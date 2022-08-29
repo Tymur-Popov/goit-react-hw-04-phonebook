@@ -4,6 +4,7 @@ import css from './ContactList.module.css'
 const ContactList = ({ contacts, deleteContact }) => (
   <ul>
     {contacts.map(({ id, name, number }) => {
+      console.log(contacts);
       return (
         <li key={id}>
           <p>
@@ -18,8 +19,6 @@ const ContactList = ({ contacts, deleteContact }) => (
   </ul>
 );
 
-export default ContactList;
-
 ContactList.propTypes = {
   contacts: PropTypes.array,
   name: PropTypes.string,
@@ -27,5 +26,7 @@ ContactList.propTypes = {
   id: PropTypes.string,
   deleteContact: PropTypes.func,
 };
+
+export default ContactList;
 
 
